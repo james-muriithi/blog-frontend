@@ -1,0 +1,36 @@
+/* Navbar */
+
+.navbar {
+    .navbar-brand img {
+        height: 60px;
+    }
+    .navbar-collapse {
+        position: relative;
+        z-index: 10;
+        background: $background-color;
+        @include media-breakpoint-down(lg){
+            margin-left: -20px;
+        }
+    }
+    .nav-item {
+        input {
+            font-size: $spacer * 0.8;
+            background-color: $searchbar-background;
+        }
+        .search {
+            .search-icon {
+                right: 10px;
+                top: 20%;
+            }
+        }
+        .nav-link {
+            color: $white !important;
+            @include transition;
+            font-size: $spacer * 1.3;
+            &:hover,
+            &.active {
+                font-weight: bold;
+            }
+        }
+    }
+}

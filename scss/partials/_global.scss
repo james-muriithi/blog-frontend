@@ -1,0 +1,67 @@
+/* Global Styles */
+
+* {
+    font-family: $font-family;
+}
+
+a {
+    text-decoration: none !important;
+}
+#body,
+body,
+html {
+    font-family: $font-family;
+    height: 100%;
+    overflow-x: hidden;
+    color: $white;
+}
+
+body{
+    background: $body-background;
+    background-repeat: no-repeat;
+}
+
+.navbar-toggler,
+.btn {
+    &:active,
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+input {
+    &:active,
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+@mixin transition {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-40{
+    height: 40px;
+    width: 40px;
+}
+.img-30{
+    height: 30px;
+    width: 30px;
+}
+.bg-lg-transparent{
+    @include media-breakpoint-down(lg){
+        background: $body-background !important;
+    }
+    @include media-breakpoint-up(lg){
+        background: transparent!important;
+    }
+}

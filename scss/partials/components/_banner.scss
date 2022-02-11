@@ -1,0 +1,64 @@
+/* Banner Section */
+.banner {
+    .banner-image {
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .overlay {
+        background: linear-gradient(
+            180deg,
+            rgba(43, 53, 68, 0) 8.85%,
+            rgba(43, 53, 68, 0.526027) 33.85%,
+            rgba(43, 53, 68, 0.8) 46.88%,
+            rgba(43, 53, 68, 0.8) 65.62%,
+            rgba(43, 53, 68, 0.8) 88.02%
+        );
+        .quote-details{
+            bottom: $spacer * 2;
+            left: $spacer * 2;
+            .quotation-mark{
+                font-family: $quotation-font;
+                font-size: $spacer * 5;
+            }
+        }
+    }
+    .owl-carousel {
+        position: relative;
+        .owl-nav {
+            padding-left: 5px;
+            padding-right: 5px;
+            position: absolute;
+            bottom: 45%;
+            width: 100%;
+            .owl-next,
+            .owl-prev {
+                font-size: $spacer * 4.5;
+                color: $white;
+                &.disabled {
+                    color: darken($color: $white, $amount: 30);
+                }
+            }
+            .owl-next {
+                float: right;
+            }
+        }
+        .owl-dots {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            .owl-dot {
+                @include transition;
+                background: darken($color: $white, $amount: 30);
+                width: 10px;
+                height: 10px;
+                margin-left: 10px;
+                border-radius: 50%;
+                &.active {
+                    background: $white;
+                }
+            }
+        }
+    }
+    
+}

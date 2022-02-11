@@ -1,0 +1,41 @@
+/* Top News Section */
+
+#latest-pitches{
+    background: $background-color;
+    .pitch-card {
+        background: $white;
+        border-radius: 5px;
+        .category,
+        .date{
+            font-size: $spacer * 0.8;
+        }
+        .details{
+            .title{
+                color: $nav-item-color;
+            }
+        }
+        .meta{
+            .user-pic{
+                height: 30px;
+                width: 30px;
+            }
+        }
+        .links {
+            span {
+                font-size: $spacer * 0.8;
+                font-style: italic;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.text-sm{
+    font-size: $spacer * 0.8;
+}
+.text-xs{
+    font-size: $spacer * 0.7;
+}
+.text-xxs{
+    font-size: $spacer * 0.6;
+}
