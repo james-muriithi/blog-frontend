@@ -1,0 +1,12 @@
+.categories {
+    .category-card {
+        .category-image {
+            height: calc(calc(calc(100% - 80px) * 9) / 16) !important;
+            width: 100%;
+            border-radius: $spacer;
+        }
+        .overlay {
+            background: linear-gradient(0deg, rgba(36, 45, 60, 0.46), rgba(36, 45, 60, 0.66));
+        }
+    }
+}

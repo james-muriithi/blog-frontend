@@ -1,0 +1,8 @@
+.blogs-section{
+    .blog-card{
+        .news-image{
+            height: calc(calc(calc(100% - 80px) * 9) / 16) !important;
+            border-radius: 10px;
+        }
+    }
+}
