@@ -1,7 +1,7 @@
 .categories {
     .category-card {
         .category-image {
-            height: calc(calc(calc(100% - 80px) * 9) / 16) !important;
+            height: calc(calc(calc(100vh - 340px) * 9) / 16) !important;
             width: 100%;
             border-radius: $spacer;
         }
